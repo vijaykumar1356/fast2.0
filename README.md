@@ -1,0 +1,1 @@
+* This is a 2.0 Nytro usermanagement and SSO authentication through Keycloak Identity and Access Management.
