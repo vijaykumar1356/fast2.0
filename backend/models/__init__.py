@@ -1,5 +1,7 @@
 from .user import Users
+from .base import get_db
 
 __all__ = (
-    Users
+    Users,
+    get_db
 )

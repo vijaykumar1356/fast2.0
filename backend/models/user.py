@@ -1,5 +1,6 @@
 from backend.models.base import Base
 from sqlalchemy import Column, Integer, String, Boolean
+from uuid import uuid4
 
 
 class Users(Base):
@@ -8,7 +9,7 @@ class Users(Base):
     id = Column(Integer, primary_key=True)
     mail = Column(String, nullable=False)
     full_name = Column(String)
-    unique_id = Column(String, nullable=False, unique=True)
+    uuid = Column(String, nullable=False, default=uuid4().hex)
     profile_pic = Column(String)
     password = Column(String)
     oauth_verfied = Column(Boolean, default=False)

@@ -12,6 +12,7 @@ importlib-resources==5.4.0
 Mako==1.1.6
 MarkupSafe==2.0.1
 mccabe==0.6.1
+psycopg2-binary==2.9.2
 pycodestyle==2.8.0
 pydantic==1.8.2
 pyflakes==2.4.0
