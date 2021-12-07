@@ -1,5 +1,5 @@
 from typing import Optional
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr
 
 
 class UserSchema(BaseModel):
@@ -11,3 +11,7 @@ class UserSchema(BaseModel):
 
     class Config:
         orm_mode = True
+
+
+class UserRegisterCode(BaseModel):
+    mail: EmailStr

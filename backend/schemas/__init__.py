@@ -1,5 +1,6 @@
-from .user import UserSchema
+from .user import UserSchema, UserRegisterCode
 
 __all__ = (
-    UserSchema
+    UserSchema,
+    UserRegisterCode
 )
